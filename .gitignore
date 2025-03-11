@@ -1,0 +1,7 @@
+.vscode/
+*.cc
+*.out
+*.txt
+**/tmp*/
+
+!template.cc
