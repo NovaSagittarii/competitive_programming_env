@@ -10,6 +10,7 @@ typedef long long ll;
 typedef std::vector<int> vi;
 typedef std::vector<vi> v2i;
 typedef std::vector<v2i> v3i;
+typedef std::vector<ll> vll;
 #define va(type, sz) std::vector<std::array<type, sz>>
 #define v2a(type, sz) std::vector<va(type, sz)>
 #define setmax(a, b) a = std::max(a, b);
