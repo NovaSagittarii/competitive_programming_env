@@ -13,7 +13,9 @@ a_debug.out: main.cc
 .PHONY: in.txt
 
 init:
-	touch in.txt out.txt out_expect.txt && \
+	> in.txt & \
+	> out.txt & \
+	> out_expect.txt & \
 	cp template.cc main.cc
 .PHONY: init
 
