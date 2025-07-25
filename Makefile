@@ -7,6 +7,9 @@ a_fast.out: main.cc
 	g++ -std=c++17 -O2 \
 	$^ -o $@
 
+a_debug.out: main.cc
+	g++ -std=c++17 -g -O0 $^ -o $@
+
 .PHONY: in.txt
 
 init:
@@ -22,6 +25,9 @@ ftest: a_fast.out in.txt
 
 run: a.out
 	./a.out
+
+memcheck: a_debug.out in.txt
+	valgrind --leak-check=full ./a_debug.out < in.txt
 
 out.txt: test
 
