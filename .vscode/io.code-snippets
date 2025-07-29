@@ -73,9 +73,45 @@
 			"$0",
 		],
 	},
+	"io read consts (n) - iotn": {
+		"scope": "cpp",
+		"prefix": "io/preset/const-n",
+		"body": [
+			"${1|int,ll,double|} n;",
+			"std::cin >> n;",
+			"$0",
+		],
+	},
+	"io read consts (nm) - iotnm": {
+		"scope": "cpp",
+		"prefix": "io/preset/const-nm",
+		"body": [
+			"${1|int,ll,double|} n, m;",
+			"std::cin >> n >> m;",
+			"$0",
+		],
+	},
+	"io read consts (nk) - iotnk": {
+		"scope": "cpp",
+		"prefix": "io/preset/const-nk",
+		"body": [
+			"${1|int,ll,double|} n, k;",
+			"std::cin >> n >> k;",
+			"$0",
+		],
+	},
+	"io read consts (nmk) - iotnmk": {
+		"scope": "cpp",
+		"prefix": "io/preset/const-nmk",
+		"body": [
+			"${1|int,ll,double|} n, m, k;",
+			"std::cin >> n >> m >> k;",
+			"$0",
+		],
+	},
 	"io read consts (nmklrq)": {
 		"scope": "cpp",
-		"prefix": "io/preset/const",
+		"prefix": "io/preset/const-many",
 		"body": [
 			"${1:int} ${2:n}, ${3:m}, ${4:k}, ${5:l}, ${6:r}, ${7:q};",
 			"std::cin >> $2 >> $3 >> $4 >> $5 >> $6 >> $7;",
