@@ -208,7 +208,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/various/SIMD.h",
 		"body": [
-			"#include \"immintrin.h\" /** keep-include */",
+			"${1:#include \"immintrin.h\" /** keep-include */}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2015-03-18",
@@ -270,7 +270,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/various/SmallPtr.h",
 		"body": [
-			"#include \"BumpAllocator.h\"",
+			"${1:#include \"BumpAllocator.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2016-08-23",
@@ -665,7 +665,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/data-structures/HashMap.h",
 		"body": [
-			"#include <bits/extc++.h> /** keep-include */",
+			"${1:#include <bits/extc++.h> /** keep-include */}",
 			"/**",
 			" * Author: Simon Lindholm, chilli",
 			" * Date: 2018-07-23",
@@ -908,7 +908,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/data-structures/OrderStatisticTree.h",
 		"body": [
-			"#include <bits/extc++.h> /** keep-include */",
+			"${1:#include <bits/extc++.h> /** keep-include */}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2016-03-22",
@@ -972,7 +972,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/data-structures/LazySegmentTree.h",
 		"body": [
-			"#include \"../various/BumpAllocator.h\"",
+			"${1:#include \"../various/BumpAllocator.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2016-10-08",
@@ -1044,7 +1044,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/data-structures/FenwickTree2d.h",
 		"body": [
-			"#include \"FenwickTree.h\"",
+			"${1:#include \"FenwickTree.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2017-05-11",
@@ -1172,7 +1172,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/LineHullIntersection.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Oleksandr Bacherikov, chilli",
 			" * Date: 2019-05-07",
@@ -1240,7 +1240,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/PolygonCut.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Ulf Lundstrom",
 			" * Date: 2009-03-21",
@@ -1282,7 +1282,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/linearTransformation.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Per Austrin, Ulf Lundstrom",
 			" * Date: 2009-04-09",
@@ -1314,7 +1314,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/CirclePolygonIntersection.h",
 		"body": [
-			"#include \"../../content/geometry/Point.h\"",
+			"${1:#include \"../../content/geometry/Point.h\"}",
 			"/**",
 			" * Author: chilli, Takanori MAEHARA",
 			" * Date: 2019-10-31",
@@ -1403,7 +1403,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/ClosestPair.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2019-04-17",
@@ -1439,7 +1439,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/lineIntersection.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Victor Lecomte, chilli",
 			" * Date: 2019-05-05",
@@ -1478,8 +1478,8 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/SegmentIntersection.h",
 		"body": [
-			"#include \"Point.h\"",
-			"#include \"OnSegment.h\"",
+			"${1:#include \"Point.h\"}",
+			"${2:#include \"OnSegment.h\"}",
 			"/**",
 			" * Author: Victor Lecomte, chilli",
 			" * Date: 2019-04-27",
@@ -1524,7 +1524,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/PolygonCenter.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Ulf Lundstrom",
 			" * Date: 2009-04-08",
@@ -1552,7 +1552,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/CircleIntersection.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2015-09-01",
@@ -1581,7 +1581,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/CircleLine.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Victor Lecomte, chilli",
 			" * Date: 2019-10-29",
@@ -1611,7 +1611,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/ConvexHull.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Stjepan Glavina, chilli",
 			" * Date: 2019-05-05",
@@ -1652,7 +1652,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/sideOf.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Ulf Lundstrom",
 			" * Date: 2009-03-21",
@@ -1684,8 +1684,8 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/PolygonUnion.h",
 		"body": [
-			"#include \"Point.h\"",
-			"#include \"sideOf.h\"",
+			"${1:#include \"Point.h\"}",
+			"${2:#include \"sideOf.h\"}",
 			"/**",
 			" * Author: black_horse2014, chilli",
 			" * Date: 2019-10-29",
@@ -1833,7 +1833,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/3dHull.h",
 		"body": [
-			"#include \"Point3D.h\"",
+			"${1:#include \"Point3D.h\"}",
 			"/**",
 			" * Author: Johan Sannemo",
 			" * Date: 2017-04-18",
@@ -1902,7 +1902,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/lineDistance.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Ulf Lundstrom",
 			" * Date: 2009-03-21",
@@ -1934,7 +1934,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/OnSegment.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Victor Lecomte, chilli",
 			" * Date: 2019-04-26",
@@ -1956,7 +1956,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/FastDelaunay.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Philippe Legault",
 			" * Date: 2016",
@@ -2068,7 +2068,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/HullDiameter.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Oleksandr Bacherikov, chilli",
 			" * Date: 2019-05-05",
@@ -2100,7 +2100,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/kdTree.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Stanford",
 			" * Date: Unknown",
@@ -2180,7 +2180,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/MinimumEnclosingCircle.h",
 		"body": [
-			"#include \"circumcircle.h\"",
+			"${1:#include \"circumcircle.h\"}",
 			"/**",
 			" * Author: Andrew He, chilli",
 			" * Date: 2019-05-07",
@@ -2216,8 +2216,8 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/DelaunayTriangulation.h",
 		"body": [
-			"#include \"Point.h\"",
-			"#include \"3dHull.h\"",
+			"${1:#include \"Point.h\"}",
+			"${2:#include \"3dHull.h\"}",
 			"/**",
 			" * Author: Mattias de Zalenski",
 			" * Date: Unknown",
@@ -2247,9 +2247,9 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/InsidePolygon.h",
 		"body": [
-			"#include \"Point.h\"",
-			"#include \"OnSegment.h\"",
-			"#include \"SegmentDistance.h\"",
+			"${1:#include \"Point.h\"}",
+			"${2:#include \"OnSegment.h\"}",
+			"${3:#include \"SegmentDistance.h\"}",
 			"/**",
 			" * Author: Victor Lecomte, chilli",
 			" * Date: 2019-04-26",
@@ -2284,7 +2284,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/PolygonArea.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Ulf Lundstrom",
 			" * Date: 2009-03-21",
@@ -2366,7 +2366,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/CircleTangents.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Victor Lecomte, chilli",
 			" * Date: 2019-10-31",
@@ -2401,7 +2401,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/LineProjectionReflection.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Victor Lecomte, chilli",
 			" * Date: 2019-10-29",
@@ -2428,7 +2428,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/ManhattanMST.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: chilli, Takanori MAEHARA",
 			" * Date: 2019-11-02",
@@ -2473,7 +2473,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/SegmentDistance.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Ulf Lundstrom",
 			" * Date: 2009-03-21",
@@ -2507,9 +2507,9 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/PointInsideHull.h",
 		"body": [
-			"#include \"Point.h\"",
-			"#include \"sideOf.h\"",
-			"#include \"OnSegment.h\"",
+			"${1:#include \"Point.h\"}",
+			"${2:#include \"sideOf.h\"}",
+			"${3:#include \"OnSegment.h\"}",
 			"/**",
 			" * Author: chilli",
 			" * Date: 2019-05-17",
@@ -2545,7 +2545,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/geometry/circumcircle.h",
 		"body": [
-			"#include \"Point.h\"",
+			"${1:#include \"Point.h\"}",
 			"/**",
 			" * Author: Ulf Lundstrom",
 			" * Date: 2009-04-11",
@@ -2714,7 +2714,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/graph/MinimumVertexCover.h",
 		"body": [
-			"#include \"DFSMatching.h\"",
+			"${1:#include \"DFSMatching.h\"}",
 			"/**",
 			" * Author: Johan Sannemo, Simon Lindholm",
 			" * Date: 2016-12-15",
@@ -2753,7 +2753,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/graph/GomoryHu.h",
 		"body": [
-			"#include \"PushRelabel.h\"",
+			"${1:#include \"PushRelabel.h\"}",
 			"/**",
 			" * Author: chilli, Takanori MAEHARA",
 			" * Date: 2020-04-03",
@@ -2965,7 +2965,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/graph/GeneralMatching.h",
 		"body": [
-			"#include \"../numerical/MatrixInverse-mod.h\"",
+			"${1:#include \"../numerical/MatrixInverse-mod.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2016-12-09",
@@ -3414,7 +3414,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/graph/CompressTree.h",
 		"body": [
-			"#include \"LCA.h\"",
+			"${1:#include \"LCA.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2016-01-14",
@@ -3540,7 +3540,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/graph/HLD.h",
 		"body": [
-			"#include \"../data-structures/LazySegmentTree.h\"",
+			"${1:#include \"../data-structures/LazySegmentTree.h\"}",
 			"/**",
 			" * Author: Benjamin Qi, Oleksandr Kulkov, chilli",
 			" * Date: 2020-01-12",
@@ -3756,7 +3756,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/graph/LCA.h",
 		"body": [
-			"#include \"../data-structures/RMQ.h\"",
+			"${1:#include \"../data-structures/RMQ.h\"}",
 			"/**",
 			" * Author: chilli, pajenegod",
 			" * Date: 2020-02-20",
@@ -3914,7 +3914,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/graph/DirectedMST.h",
 		"body": [
-			"#include \"../data-structures/UnionFindRollback.h\"",
+			"${1:#include \"../data-structures/UnionFindRollback.h\"}",
 			"/**",
 			" * Author: chilli, Takanori MAEHARA, Benq, Simon Lindholm",
 			" * Date: 2019-05-10",
@@ -4223,7 +4223,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/strings/Hashing-codeforces.h",
 		"body": [
-			"#include <sys/time.h>",
+			"${1:#include <sys/time.h>}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2015-03-15",
@@ -4618,7 +4618,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/number-theory/MillerRabin.h",
 		"body": [
-			"#include \"ModMulLL.h\"",
+			"${1:#include \"ModMulLL.h\"}",
 			"/**",
 			" * Author: chilli, c1729, Simon Lindholm",
 			" * Date: 2019-03-28",
@@ -4701,7 +4701,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/number-theory/ModularArithmetic.h",
 		"body": [
-			"#include \"euclid.h\"",
+			"${1:#include \"euclid.h\"}",
 			"/**",
 			" * Author: Lukas Polacek",
 			" * Date: 2009-09-28",
@@ -4737,7 +4737,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/number-theory/ModSqrt.h",
 		"body": [
-			"#include \"ModPow.h\"",
+			"${1:#include \"ModPow.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2016-08-31",
@@ -4862,7 +4862,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/number-theory/CRT.h",
 		"body": [
-			"#include \"euclid.h\"",
+			"${1:#include \"euclid.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2019-05-22",
@@ -4985,8 +4985,8 @@
 		"scope": "cpp",
 		"prefix": "kactl/number-theory/Factor.h",
 		"body": [
-			"#include \"ModMulLL.h\"",
-			"#include \"MillerRabin.h\"",
+			"${1:#include \"ModMulLL.h\"}",
+			"${2:#include \"MillerRabin.h\"}",
 			"/**",
 			" * Author: chilli, SJTU, pajenegod",
 			" * Date: 2020-03-04",
@@ -5492,7 +5492,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/numerical/BerlekampMassey.h",
 		"body": [
-			"#include \"../number-theory/ModPow.h\"",
+			"${1:#include \"../number-theory/ModPow.h\"}",
 			"/**",
 			" * Author: Lucian Bicsi",
 			" * Date: 2017-10-31",
@@ -5591,7 +5591,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/numerical/FastFourierTransformMod.h",
 		"body": [
-			"#include \"FastFourierTransform.h\"",
+			"${1:#include \"FastFourierTransform.h\"}",
 			"/**",
 			" * Author: chilli",
 			" * Date: 2019-04-25",
@@ -5846,7 +5846,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/numerical/SolveLinear2.h",
 		"body": [
-			"#include \"SolveLinear.h\"",
+			"${1:#include \"SolveLinear.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2016-09-06",
@@ -5962,7 +5962,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/numerical/NumberTheoreticTransform.h",
 		"body": [
-			"#include \"../number-theory/ModPow.h\"",
+			"${1:#include \"../number-theory/ModPow.h\"}",
 			"/**",
 			" * Author: chilli",
 			" * Date: 2019-04-16",
@@ -6023,7 +6023,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/numerical/PolyRoots.h",
 		"body": [
-			"#include \"Polynomial.h\"",
+			"${1:#include \"Polynomial.h\"}",
 			"/**",
 			" * Author: Per Austrin",
 			" * Date: 2004-02-08",
@@ -6064,7 +6064,7 @@
 		"scope": "cpp",
 		"prefix": "kactl/numerical/MatrixInverse-mod.h",
 		"body": [
-			"#include \"../number-theory/ModPow.h\"",
+			"${1:#include \"../number-theory/ModPow.h\"}",
 			"/**",
 			" * Author: Simon Lindholm",
 			" * Date: 2016-12-08",

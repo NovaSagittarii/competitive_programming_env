@@ -13,6 +13,9 @@ def main():
 
 
 def process(out: dict, path: str, code: str):
+    """
+    Generated using Gemini (convert JS to Python)
+    """
     if not path.endswith(".h"):
         return
     path = "kactl/" + path
@@ -23,6 +26,11 @@ def process(out: dict, path: str, code: str):
     body_lines = code.split("\n")
     body_lines.extend(["", "$0"])
     body_lines.sort(key=lambda x: x.startswith("#include"), reverse=True)
+
+    for i, s in enumerate(body_lines):
+        if s.startswith("#include"):
+            body_lines[i] = f"${{{i+1}:{s}}}"
+
     out[path] = {
         "scope": "cpp",
         "prefix": path,
