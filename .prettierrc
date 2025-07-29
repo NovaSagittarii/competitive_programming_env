@@ -1,0 +1,14 @@
+{
+	"useTabs": true,
+	"singleQuote": false,
+	"trailingComma": "all",
+	"overrides": [
+		{
+			"files": "*.code-snippets",
+			"options": {
+				"printWidth": 0,
+				"parser": "jsonc"
+			}
+		}
+	]
+}

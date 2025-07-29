@@ -1,0 +1,125 @@
+{
+	// Place your ccc workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+
+	// General cin IO
+	"io cin 1": {
+		"scope": "cpp",
+		"prefix": "io/cin/0d",
+		"body": [
+			"std::cin >> ${1:n};",
+			"$0",
+		],
+		"description": "Read 1 of a type",
+	},
+	"io cin 1D": {
+		"scope": "cpp",
+		"prefix": "io/cin/1d",
+		"body": [
+			"for (auto &x : ${1:a}) std::cin >> x;",
+			"$0",
+		],
+		"description": "Read n of a type",
+	},
+	"io cin 2D": {
+		"scope": "cpp",
+		"prefix": "io/cin/2d",
+		"body": [
+			"for (auto &r : ${1:a}) for (auto &x : r) std::cin >> x;",
+			"$0",
+		],
+		"description": "Read n^2 of a type",
+	},
+
+	// Preset types (with initialization)
+	"io vi": {
+		"scope": "cpp",
+		"prefix": "io/preset/vi",
+		"body": [
+			"vi ${1:a}(${2:n});",
+			"for (auto &x : $1) std::cin >> x;",
+			"$0",
+		],
+	},
+	"io vpii": {
+		"scope": "cpp",
+		"prefix": "io/preset/vpii",
+		"body": [
+			"va(int, 2) ${1:a}(${2:n});",
+			"for (auto &[l, r] : $1) std::cin >> l >> r;",
+			"$0",
+		],
+	},
+	"io v2i": {
+		"scope": "cpp",
+		"prefix": "io/preset/v2i",
+		"body": [
+			"v2i ${1:a}(${2:n}, vi(${3:m}));",
+			"for (auto &r : $1) for (auto &x : r) std::cin >> x;",
+			"$0",
+		],
+	},
+	"io read vs": {
+		"scope": "cpp",
+		"prefix": "io/preset/vs",
+		"body": [
+			"std::vector<std::string> ${1:a};",
+			"for (auto &x : $1) std::cin >> x;",
+			"$0",
+		],
+	},
+	"io read consts (nmklrq)": {
+		"scope": "cpp",
+		"prefix": "io/preset/const",
+		"body": [
+			"${1:int} ${2:n}, ${3:m}, ${4:k}, ${5:l}, ${6:r}, ${7:q};",
+			"std::cin >> $2 >> $3 >> $4 >> $5 >> $6 >> $7;",
+			"$0",
+		],
+		"description": "TAB (multiple), RIGHTARROW, SHIFT+END, SEMICOLON",
+	},
+	"io read s": {
+		"scope": "cpp",
+		"prefix": "io/preset/s",
+		"body": [
+			"std::string ${1:s};",
+			"std::cin >> ${1:s};",
+			"$0",
+		],
+	},
+
+	// Graphs
+	"io adjacent_list": {
+		"scope": "cpp",
+		"prefix": "io/graph/adj",
+		"body": [
+			"v2i adj(${1:n});",
+			"for (int i = 0; i < ${2:m}; ++i) {",
+			"\tint u, v;",
+			"\tstd::cin >> u >> v;",
+			"\t--u, --v;",
+			"\tadj[u].push_back(v);${3:\n\tadj[v].push_back(u); // undirected}",
+			"}",
+			"$0",
+		],
+	},
+	"io adjacency_list weighted": {
+		"scope": "cpp",
+		"prefix": "io/graph/adj-w",
+		"body": [
+			"v2a(int, 2) adj(${1:n});",
+			"for (int i = 0; i < ${2:m}; ++i) {",
+			"\tint u, v, w;",
+			"\tstd::cin >> u >> v >> w;",
+			"\t--u, --v;",
+			"\tadj[u].push_back({v, w});${3:\n\tadj[v].push_back({u, w\\}); // undirected}",
+			"}",
+			"$0",
+		],
+	},
+}
