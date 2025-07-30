@@ -138,6 +138,22 @@
 			"$1(0, -1, $1);",
 		],
 	},
+	"common dfs tree w/parent": {
+		"scope": "cpp",
+		"prefix": "common/graph/dfs-tree-parent",
+		"body": [
+			"vi parent(n, -1);",
+			"auto ${1:dfs} = [&](int u, int prev, auto&& dfs) -> ${2:void} {",
+			"\tparent[u] = prev;",
+			"\tfor (auto v : ${3:adj}[u]) {",
+			"\t\tif (v == prev) continue;",
+			"\t\tdfs(v, u, dfs);",
+			"\t\t$0",
+			"\t}",
+			"};",
+			"$1(0, -1, $1);",
+		],
+	},
 	"common bfs": {
 		"scope": "cpp",
 		"prefix": "common/graph/bfs",
