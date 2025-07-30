@@ -51,7 +51,16 @@
 		"prefix": "io/preset/vpii",
 		"body": [
 			"va(int, 2) ${1:a}(${2:n});",
-			"for (auto &[l, r] : $1) std::cin >> l >> r;",
+			"for (auto &r : $1) for (auto &x : r) std::cin >> x;",
+			"$0",
+		],
+	},
+	"io va(int, X)": {
+		"scope": "cpp",
+		"prefix": "io/preset/va-int",
+		"body": [
+			"va(int, ${1:2}) ${2:a}(${3:n});",
+			"for (auto &r : $2) for (auto &x : r) std::cin >> x;",
 			"$0",
 		],
 	},
