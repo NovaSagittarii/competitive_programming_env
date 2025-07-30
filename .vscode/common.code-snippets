@@ -96,7 +96,7 @@
 	// graphs
 	"common dfs tree": {
 		"scope": "cpp",
-		"prefix": "common/dfs-tree",
+		"prefix": "common/graph/dfs-tree",
 		"body": [
 			"auto ${1:dfs} = [&](int u, int prev, auto&& dfs) -> ${2:void} {",
 			"\tfor (auto v : ${3:adj}[u]) {",
@@ -110,7 +110,7 @@
 	},
 	"common bfs": {
 		"scope": "cpp",
-		"prefix": "common/bfs",
+		"prefix": "common/graph/bfs",
 		"body": [
 			"std::queue<${1:int}> q;",
 			"q.push(${2:s});",
@@ -131,6 +131,19 @@
 			"\t\t\tq.push(v);",
 			"\t\t}",
 			"\t}",
+			"}",
+		],
+	},
+	"common grid dij": {
+		"scope": "cpp",
+		"prefix": "common/graph/grid-nav",
+		"body": [
+			"for (auto [di, dj] : va(int, 2) {",
+			"\t${1|/*adj */ {0\\,1}\\,{1\\,0}\\,{0\\,-1}\\,{-1\\,0},/*diag*/ {-1\\,1}\\,{1\\,-1}\\,{-1\\,-1}\\,{-1\\,-1},/*8way*/ {0\\,1}\\,{1\\,0}\\,{0\\,-1}\\,{-1\\,0}\\,{-1\\,1}\\,{1\\,-1}\\,{-1\\,-1}\\,{-1\\,-1}|}",
+			"}) {",
+			"\tint ni = i + di, nj = j + dj;",
+			"\tif (ni < ${2:0} || ni >= ${3:n} || nj < ${4:0} || nj >= ${5:m}) continue;",
+			"\t$0  // process ni nj",
 			"}",
 		],
 	},
