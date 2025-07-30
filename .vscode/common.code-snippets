@@ -60,7 +60,7 @@
 	// "dp"
 	"common prefix_sum binary_operation": {
 		"scope": "cpp",
-		"prefix": "common/ps",
+		"prefix": "common/prefixsum",
 		"body": [
 			"vi ${1:ps}(${2:a}.size()+1); // $1[i] = [0, i)",
 			"for (int i = 0; i < $2.size(); ++i) $1[i+1] = $1[i] ${3|+,^,*|} $2[i];",
@@ -69,7 +69,7 @@
 	},
 	"common suffix_sum binary_operation": {
 		"scope": "cpp",
-		"prefix": "common/ss",
+		"prefix": "common/suffixsum",
 		"body": [
 			"vi ${1:ss}(${2:a}.size()+1); // $1[i] = [i, n)",
 			"for (int i = 0; i < $2.size(); ++i) $1[i] = $1[i+1] ${3|+,^,*|} $2[i];",
@@ -78,7 +78,7 @@
 	},
 	"common prefix_sum function": {
 		"scope": "cpp",
-		"prefix": "common/ps-function",
+		"prefix": "common/prefixsum-function",
 		"body": [
 			"vi ${1:ps}(${2:a}.size()+1); // $1[i] = [0, i)",
 			"for (int i = 0; i < $2.size(); ++i) $1[i+1] = ${3|std::max,std::min|}($1[i], $2[i]);",
@@ -87,7 +87,7 @@
 	},
 	"common suffix_sum function": {
 		"scope": "cpp",
-		"prefix": "common/ss-function",
+		"prefix": "common/suffixsum-function",
 		"body": [
 			"vi ${1:ss}(${2:a}.size()+1); // $1[i] = [i, n)",
 			"for (int i = 0; i < $2.size(); ++i) $1[i] = ${3|std::max,std::min|}($1[i], $2[i]);",
