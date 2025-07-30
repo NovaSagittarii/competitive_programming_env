@@ -13,8 +13,8 @@ typedef std::vector<v2i> v3i;
 typedef std::vector<ll> vll;
 #define va(type, sz) std::vector<std::array<type, sz>>
 #define v2a(type, sz) std::vector<va(type, sz)>
-#define setmax(a, b) a = std::max(a, b);
-#define setmin(a, b) a = std::min(a, b);
+#define setmax(a, b) a = std::max(a, b)
+#define setmin(a, b) a = std::min(a, b)
 
 int main() {
   std::ios_base::sync_with_stdio(false);
