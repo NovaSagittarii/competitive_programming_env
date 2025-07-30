@@ -94,6 +94,19 @@
 			"$0",
 		],
 	},
+	"common knapsack - cmks": {
+		"scope": "cpp",
+		"prefix": "common/knapsack",
+		"body": [
+			"vll ${1:ks}(${2:B}+1); // knapsack dp MAXB=$2",
+			"for (auto [v, w] : ${3:items}) { const ll B = $2;",
+			"\tfor (${4|/*binary knapsack*/ int b = B; b >= w; --b,/*replacement*/ int b = w; b <= B; ++b|}) {",
+			"\t\tsetmax($1[b], $1[b-w]+v);",
+			"\t}",
+			"}",
+			"$0",
+		],
+	},
 
 	// binary search
 	"common binary_search": {
