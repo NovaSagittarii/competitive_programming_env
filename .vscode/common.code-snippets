@@ -39,6 +39,23 @@
 			"$0",
 		],
 	},
+	"common reverse": {
+		"scope": "cpp",
+		"prefix": "common/reverse",
+		"body": [
+			"std::reverse(${1:a}.begin(), $1.end());",
+			"$0",
+		],
+	},
+	"common max/min element": {
+		"scope": "cpp",
+		"prefix": "common/minmax",
+		"body": [
+			"auto ${1/minmax/[min, max]/g} = *std::${1|max,min,minmax|}_element(${2:a}.begin(), $2.end());",
+			"$0",
+		],
+		"description": "if you pick minmax, need to remove the * since it returns pair",
+	},
 
 	// "dp"
 	"common prefix_sum binary_operation": {
