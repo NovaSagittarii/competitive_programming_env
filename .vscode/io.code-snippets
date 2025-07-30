@@ -129,7 +129,7 @@
 	},
 
 	// Graphs
-	"io adjacent_list": {
+	"io adjacency_list": {
 		"scope": "cpp",
 		"prefix": "io/graph/adj",
 		"body": [
