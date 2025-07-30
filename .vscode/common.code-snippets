@@ -58,7 +58,7 @@
 	},
 
 	// "dp"
-	"common prefix_sum binary_operation": {
+	"common prefix_sum binary_operation - cmpx": {
 		"scope": "cpp",
 		"prefix": "common/prefixsum",
 		"body": [
@@ -67,7 +67,7 @@
 			"$0",
 		],
 	},
-	"common suffix_sum binary_operation": {
+	"common suffix_sum binary_operation - cmsx": {
 		"scope": "cpp",
 		"prefix": "common/suffixsum",
 		"body": [
@@ -76,7 +76,7 @@
 			"$0",
 		],
 	},
-	"common prefix_sum function": {
+	"common prefix_sum function - cmpxo": {
 		"scope": "cpp",
 		"prefix": "common/prefixsum-function",
 		"body": [
@@ -85,7 +85,7 @@
 			"$0",
 		],
 	},
-	"common suffix_sum function": {
+	"common suffix_sum function - cmsxo": {
 		"scope": "cpp",
 		"prefix": "common/suffixsum-function",
 		"body": [
