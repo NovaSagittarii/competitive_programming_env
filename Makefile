@@ -34,4 +34,7 @@ memcheck: a_debug.out in.txt
 out.txt: test
 
 diff: out.txt out_expect.txt
-	if diff -Bb out.txt out_expect.txt; then echo "\e[1;32mOK\e[0m"; fi
+	if diff -Bb out.txt out_expect.txt; \
+	then echo "\e[1;32mOK matched\e[0m"; \
+	else echo "\a\e[1;31mNot matched\e[0m"; \
+	fi
