@@ -109,15 +109,14 @@
 			"$0",
 		],
 	},
-	"io read consts (nmklrq)": {
+	"io read consts (space separated) - iot": {
 		"scope": "cpp",
-		"prefix": "io/preset/const-many",
+		"prefix": "io/preset/const",
 		"body": [
-			"${1:int} ${2:n}, ${3:m}, ${4:k}, ${5:l}, ${6:r}, ${7:q};",
-			"std::cin >> $2 >> $3 >> $4 >> $5 >> $6 >> $7;",
+			"${1|int,ll,double|} ${2/\\s+/, /g}; // ${2:n m k l r}",
+			"std::cin >> ${2/\\s+/ >> /g};",
 			"$0",
 		],
-		"description": "TAB (multiple), RIGHTARROW, SHIFT+END, SEMICOLON",
 	},
 	"io read s": {
 		"scope": "cpp",
