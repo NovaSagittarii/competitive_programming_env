@@ -77,7 +77,7 @@
 		"scope": "cpp",
 		"prefix": "io/preset/const-n",
 		"body": [
-			"${1|int,ll,double|} n;",
+			"${1|ll,double|} n;",
 			"std::cin >> n;",
 			"$0",
 		],
@@ -86,7 +86,7 @@
 		"scope": "cpp",
 		"prefix": "io/preset/const-nm",
 		"body": [
-			"${1|int,ll,double|} n, m;",
+			"${1|ll,double|} n, m;",
 			"std::cin >> n >> m;",
 			"$0",
 		],
@@ -95,7 +95,7 @@
 		"scope": "cpp",
 		"prefix": "io/preset/const-nk",
 		"body": [
-			"${1|int,ll,double|} n, k;",
+			"${1|ll,double|} n, k;",
 			"std::cin >> n >> k;",
 			"$0",
 		],
@@ -104,7 +104,7 @@
 		"scope": "cpp",
 		"prefix": "io/preset/const-nmk",
 		"body": [
-			"${1|int,ll,double|} n, m, k;",
+			"${1|ll,double|} n, m, k;",
 			"std::cin >> n >> m >> k;",
 			"$0",
 		],
@@ -113,7 +113,7 @@
 		"scope": "cpp",
 		"prefix": "io/preset/const",
 		"body": [
-			"${1|int,ll,double|} ${2/\\s+/, /g}; // ${2:n m k l r}",
+			"${1|ll,double|} ${2/\\s+/, /g}; // ${2:n m k l r}",
 			"std::cin >> ${2/\\s+/ >> /g};",
 			"$0",
 		],
