@@ -118,7 +118,7 @@
 			"$0",
 		],
 	},
-	"io read consts (space separated) - iot": {
+	"io read consts (space separated) - iconst": {
 		"scope": "cpp",
 		"prefix": "io/preset/const",
 		"body": [
