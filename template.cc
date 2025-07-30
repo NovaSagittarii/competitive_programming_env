@@ -21,7 +21,7 @@ int main() {
   std::cin.tie(0);
 
   int tn = 1;
-  std::cin >> tn; // std::cerr << "MULTITEST MODE\n";
+  std::cin >> tn; std::cerr << "\e[1;31m\e[5m[!]\e[25m MULTITEST MODE \e[5m[!]\e[25m\e[0m" << std::endl;
   while (tn--) {
     
 
