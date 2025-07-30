@@ -139,6 +139,22 @@
 			"$1(0, -1, $1);",
 		],
 	},
+	"common dfs tree weighted": {
+		"scope": "cpp",
+		"prefix": "common/graph/dfs-tree-w",
+		"body": [
+			"vll dist(n, -1);",
+			"auto ${1:dfs} = [&](int u, int prev, auto&& dfs, ll c=0) -> ${2:void} {",
+			"\tdist[u] = c;",
+			"\tfor (auto [v, dc] : ${3:adj}[u]) {",
+			"\t\tif (v == prev) continue;",
+			"\t\tdfs(v, u, dfs, c+dc);",
+			"\t\t$0",
+			"\t}",
+			"};",
+			"$1(0, -1, $1);",
+		],
+	},
 	"common dfs tree w/parent": {
 		"scope": "cpp",
 		"prefix": "common/graph/dfs-tree-parent",
