@@ -190,6 +190,7 @@
 			"pq.push({-0, ${1:s}});",
 			"while (!pq.empty()) {",
 			"\tauto [c, u] = pq.top();",
+			"\tpq.pop();",
 			"\tc *= -1;",
 			"\tif (dist[u] != -1) continue;",
 			"\tdist[u] = c;",
