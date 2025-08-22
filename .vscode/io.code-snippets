@@ -118,6 +118,15 @@
 			"$0",
 		],
 	},
+	"io read consts (qn) - iotqn": {
+		"scope": "cpp",
+		"prefix": "io/preset/const-qn",
+		"body": [
+			"${1|ll,double|} qn;",
+			"std::cin >> qn;",
+			"$0",
+		],
+	},
 	"io read consts (space separated) - iconst": {
 		"scope": "cpp",
 		"prefix": "io/preset/const",
