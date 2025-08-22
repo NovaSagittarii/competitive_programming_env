@@ -8,8 +8,9 @@ import requests
 import json
 import math
 import random
- 
-contestid = input("contestid: ")
+import sys
+
+contestid = sys.argv[1] if len(sys.argv) >= 2 else input("contestid: ")
 result = requests.get("https://codeforces.com/api/contest.standings?contestId="+contestid+"&showUnofficial=true&participantTypes=CONTESTANT,VIRTUAL,OUT_OF_COMPETITION").json()["result"]
 problems = result["problems"]
 standings = result["rows"]
