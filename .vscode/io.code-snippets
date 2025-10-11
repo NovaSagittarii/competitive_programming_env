@@ -77,7 +77,7 @@
 		"scope": "cpp",
 		"prefix": "io/preset/vs",
 		"body": [
-			"std::vector<std::string> ${1:a};",
+			"std::vector<std::string> ${1:a}(${2:n});",
 			"for (auto &x : $1) std::cin >> x;",
 			"$0",
 		],
