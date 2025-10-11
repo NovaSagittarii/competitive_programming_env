@@ -1,0 +1,25 @@
+{
+	"ext/hilbert": {
+		"scope": "cpp",
+		"prefix": "ext/hilbert",
+		"description": "Hilbert curve for speeding up Mo's Algorithm. Replace #define K in kactl template",
+		"body": [
+			"// https://take44444.github.io/Algorithm-Book/range/mo/main.html#%E3%82%B3%E3%83%BC%E3%83%89",
+			"constexpr int maxn = 1 << 25;",
+			"ll hilbertorder(int x, int y) {",
+			"  ll rx, ry, d = 0;",
+			"  for (ll s=maxn>>1; s; s>>=1) {",
+			"    rx = (x & s)>0, ry = (y & s)>0;",
+			"    d += s * s * ((rx * 3) ^ ry);",
+			"    if (ry) continue;",
+			"    if (rx) {",
+			"      x = maxn-1 - x;",
+			"      y = maxn-1 - y;",
+			"    }",
+			"    swap(x, y);",
+			"  }",
+			"  return d;",
+			"}",
+		],
+	},
+}
