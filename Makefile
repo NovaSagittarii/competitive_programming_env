@@ -16,6 +16,7 @@ init:
 	> in.txt & \
 	> out.txt & \
 	> out_expect.txt & \
+	> main.py & \
 	cp template.cc main.cc
 .PHONY: init
 
@@ -38,3 +39,6 @@ diff: out.txt out_expect.txt
 	then echo "\e[1;32mOK matched\e[0m"; \
 	else echo "\a\e[1;31mNot matched\e[0m"; \
 	fi
+
+testpy: main.py in.txt
+	python main.py < in.txt > out.txt
