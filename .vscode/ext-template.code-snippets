@@ -1,4 +1,13 @@
 {
+	"ext/rng": {
+		"scope": "cpp",
+		"prefix": "ext/rng",
+		"description": "good random for codeforces (prevents hacks)",
+		"body": [
+			"std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());",
+			"$0",
+		],	
+	},
 	"ext/hilbert": {
 		"scope": "cpp",
 		"prefix": "ext/hilbert",
