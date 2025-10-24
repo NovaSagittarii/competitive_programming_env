@@ -19,6 +19,7 @@ typedef std::vector<ll> vll;
 int main() {
   std::ios_base::sync_with_stdio(false);
   std::cin.tie(0);
+  std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());
 
   int tn = 1;
   std::cin >> tn; std::cerr << "\e[1;31m\e[5m[!]\e[25m MULTITEST MODE \e[5m[!]\e[25m\e[0m" << std::endl;
