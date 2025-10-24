@@ -56,6 +56,17 @@
 		],
 		"description": "if you pick minmax, need to remove the * since it returns pair",
 	},
+	"common coordinate compression": {
+		"scope": "cpp",
+		"prefix": "common/coord_compress",
+		"body": [
+			"std::map<int, int> compress, decompress;",
+    		"for (auto x : ${1:a}) compress[x] = 0;",
+    		"int i = 0; for (auto& [k, v] : compress) decompress[v = i++] = k;",
+    		"for (auto& x : $1) x = compress[x];",
+			"$0",
+		],
+	},
 
 	// "dp"
 	"common prefix_sum binary_operation - cmpx": {
