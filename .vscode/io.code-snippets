@@ -91,6 +91,15 @@
 			"$0",
 		],
 	},
+	"io read consts (n qn) - iotnq": {
+		"scope": "cpp",
+		"prefix": "io/preset/const-n-qn",
+		"body": [
+			"${1|ll,int|} n, qn;",
+			"std::cin >> n >> qn;",
+			"$0",
+		],
+	},
 	"io read consts (nm) - iotnm": {
 		"scope": "cpp",
 		"prefix": "io/preset/const-nm",
