@@ -1,3 +1,17 @@
+### Initialization
+.PHONY: init
+init:
+	> in.txt & \
+	> out.txt & \
+	> out_expect.txt & \
+	> main.py & \
+	cp template.cc main.cc
+
+### Generators and checkers
+gen: gen.py
+	python gen.py > in.txt
+
+### [cpp] Compile and run
 a.out: main.cc
 	g++ -std=c++17 -O0 -fsanitize=undefined -fsanitize=address \
 	-fno-sanitize-recover -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC \
@@ -9,16 +23,6 @@ a_fast.out: main.cc
 
 a_debug.out: main.cc
 	g++ -std=c++17 -g -O0 $^ -o $@
-
-.PHONY: in.txt
-
-init:
-	> in.txt & \
-	> out.txt & \
-	> out_expect.txt & \
-	> main.py & \
-	cp template.cc main.cc
-.PHONY: init
 
 test: a.out in.txt
 	./a.out < in.txt > out.txt
@@ -40,5 +44,6 @@ diff: out.txt out_expect.txt
 	else echo "\a\e[1;31mNot matched\e[0m"; \
 	fi
 
+### [py] Compile and run
 testpy: main.py in.txt
 	python main.py < in.txt > out.txt
