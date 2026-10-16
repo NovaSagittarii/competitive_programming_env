@@ -1,5 +1,14 @@
 # Competitive Coding Environment
 
+## Setup
+
+### Debian
+
+```sh
+sudo apt update
+sudo apt install build-essential valgrind libc6-dbg
+```
+
 ### KACTL Export to Code Snippet Utility
 
 ```js
