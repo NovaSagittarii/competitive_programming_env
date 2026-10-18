@@ -1,0 +1,136 @@
+{
+	// Preset types (with initialization)
+	"io vi": {
+		"scope": "python",
+		"prefix": "io/preset/vi",
+		"body": [
+			"${1:a} = list(map(int, input().split())) # vi",
+			"$0",
+		],
+	},
+	"io vpii": {
+		"scope": "python",
+		"prefix": "io/preset/vpii",
+		"body": [
+			"${1:a} = [list(map(int, input().split())) for _ in range(${2:n})] # vpii (v2i alias)",
+			"$0",
+		],
+	},
+	"io va(int, X)": {
+		"scope": "python",
+		"prefix": "io/preset/va-int",
+		"body": [
+			"${1:a} = [list(map(int, input().split())) for _ in range(${2:n})] # va(int, $2) (v2i alias)",
+			"$0",
+		],
+	},
+	"io v2i": {
+		"scope": "python",
+		"prefix": "io/preset/v2i",
+		"body": [
+			"${1:a} = [list(map(int, input().split())) for _ in range(${2:n})] # v2i",
+			"$0",
+		],
+	},
+	"io read vs": {
+		"scope": "python",
+		"prefix": "io/preset/vs",
+		"body": [
+			"${1:a} = input().split() # vs",
+			"$0",
+		],
+	},
+	"io read consts (n) - iotn": {
+		"scope": "python",
+		"prefix": "io/preset/const-n",
+		"body": [
+			"n = int(input())",
+			"$0",
+		],
+	},
+	"io read consts (n qn) - iotnq": {
+		"scope": "python",
+		"prefix": "io/preset/const-n-qn",
+		"body": [
+			"n, qn = map(int, input().split())",
+			"$0",
+		],
+	},
+	"io read consts (nm) - iotnm": {
+		"scope": "python",
+		"prefix": "io/preset/const-nm",
+		"body": [
+			"n, m = map(int, input().split())",
+			"$0",
+		],
+	},
+	"io read consts (nk) - iotnk": {
+		"scope": "python",
+		"prefix": "io/preset/const-nk",
+		"body": [
+			"n, k = map(int, input().split())",
+			"$0",
+		],
+	},
+	"io read consts (nmk) - iotnmk": {
+		"scope": "python",
+		"prefix": "io/preset/const-nmk",
+		"body": [
+			"n, m, k = map(int, input().split())",
+			"$0",
+		],
+	},
+	"io read consts (qn) - iotqn": {
+		"scope": "python",
+		"prefix": "io/preset/const-qn",
+		"body": [
+			"qn = map(int, input().split())",
+			"$0",
+		],
+	},
+	"io read consts (space separated) - iconst": {
+		"scope": "python",
+		"prefix": "io/preset/const",
+		"body": [
+			"${1/\\s+/, /g} = map(int, input().split()) # ${1:n m k l r}",
+			"$0",
+		],
+	},
+	"io read s": {
+		"scope": "python",
+		"prefix": "io/preset/s",
+		"body": [
+			"${1:s} = input()",
+			"$0",
+		],
+	},
+	// Graphs
+	// "io adjacency_list": {
+	// 	"scope": "python",
+	// 	"prefix": "io/graph/adj",
+	// 	"body": [
+	// 		"adj = [[] for _ in range(n)] v2i adj(${1:n});",
+	// 		"for (int i = 0; i < ${2:m}; ++i) {",
+	// 		"\tint u, v;",
+	// 		"\tstd::cin >> u >> v;",
+	// 		"\t--u, --v;",
+	// 		"\tadj[u].push_back(v);${3:\n\tadj[v].push_back(u); // undirected}",
+	// 		"}",
+	// 		"$0",
+	// 	],
+	// },
+	// "io adjacency_list weighted": {
+	// 	"scope": "python",
+	// 	"prefix": "io/graph/adj-w",
+	// 	"body": [
+	// 		"v2a(int, 2) adj(${1:n});",
+	// 		"for (int i = 0; i < ${2:m}; ++i) {",
+	// 		"\tint u, v, w;",
+	// 		"\tstd::cin >> u >> v >> w;",
+	// 		"\t--u, --v;",
+	// 		"\tadj[u].push_back({v, w});${3:\n\tadj[v].push_back({u, w\\}); // undirected}",
+	// 		"}",
+	// 		"$0",
+	// 	],
+	// },
+}
